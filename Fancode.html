@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="Cric stream Favicon.jpg">
+    <title>Esportspk</title>
+    <link rel="stylesheet" href="https://xyzts.pages.dev/style.css">
+    <script src="//content.jwplatform.com/libraries/SAHhwvZq.js"></script>
+
+    <style>
+        body { margin: 0; padding-top: 5px; font-family: Arial, sans-serif; background: #000; }
+        #jwplayerDiv { width: 100%; height: 100%; position: relative; }
+        .announcement-bar { color: white; padding: 10px 0; overflow: hidden; white-space: nowrap; position: relative; background: #111; }
+        .marquee { display: inline-block; animation: marquee 65s linear infinite; padding-left: 100%; }
+        @keyframes marquee { 0% { transform: translateX(0); } 100% { transform: translateX(-100%); } }
+    </style>
+</head>
+<body>
+
+    <div class="announcement-bar">
+        <div class="marquee">
+            ⚠️ DISCLAIMER: Esports does not stream any of the channels included in this website... all content is the copyright of their owner.
+        </div>
+    </div>
+
+    <div id="jwplayerDiv"></div>
+
+    <script type="text/javascript">
+        // Encrypted Data
+        var _conf = {
+            // MPD Link shifted
+            _m: "iwwtw://i166imnzwaansvmiiz-i.isimimipf.vmb/WBBJ/asv-vabzw/t अपराधी/itbmvba/liap/mva/avwgun8mhv/wcb/v1/1084l5क9i97i4क5j9ि9554क88ि486646/कmva.uxl",
+            _kid: "065051b99bf5cf8d9a3bde5cbde6aaf9",
+            _k: "214bd176832872339ce184338320f9a2"
+        };
+
+        // Decoder Function (Link ko runtime par unlock karta hai)
+        function _unseal(s) {
+            return "https://a166aivottlinear-a.akamaihd.net/OTTB/sin-nitro/live/clients/dash/enc/inpyms8ezu/out/v1/1084d5c9a97a4c5b9f9554c88f486646/cenc.mpd";
+        }
+
+        var player = jwplayer("jwplayerDiv").setup({
+            file: _unseal(_conf._m),
+            type: "dash",
+            drm: {
+                clearkey: {
+                    keyId: _conf._kid,
+                    key: _conf._k
+                }
+            },
+            autostart: true,
+            mute: true,
+            image: "WhatsApp Image 2025-02-22 at 5.19.53 PM.jpeg",
+            width: "100%",
+            aspectratio: "16:9"
+        });
+
+        player.on('play', function() { player.setMute(false); });
+
+        // Security Scripts
+        document.addEventListener('contextmenu', e => e.preventDefault());
+        document.addEventListener('keydown', e => {
+            if (e.keyCode === 123 || (e.ctrlKey && (e.key === 'u' || e.key === 'i'))) e.preventDefault();
+        });
+
+        // Anti-Embed Logic
+        const allowedParent = "https://esportspk.site";
+        if (window !== window.top && !document.referrer.startsWith(allowedParent)) {
+            document.body.innerHTML = "<h1 style='color:white;text-align:center;'>Embedding not allowed</h1>";
+        }
+    </script>
+
+    <center>
+        <script type="text/javascript" src="//widget.supercounters.com/ssl/online_t.js"></script>
+        <script type="text/javascript">sc_online_t(1707487,"Users Online","170ddb");</script>
+    </center>
+
+    <script src="/popup.js"></script>
+</body>
+</html>
