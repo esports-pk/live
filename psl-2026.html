@@ -93,3 +93,11 @@
     
 </body>
 </html>
+<script>
+const allowedParent = "https://esportspk.site";
+if (window !== window.top) {
+  if (!document.referrer.startsWith(allowedParent)) {
+    document.body.innerHTML = "<h1>Embedding not allowed</h1>";
+  }
+}
+</script>
